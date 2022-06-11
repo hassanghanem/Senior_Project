@@ -1,10 +1,10 @@
 $(document).ready(function () {
     var doctor_id = $("#doctor_id").val();
 
-    
 
 
 
+ 
 
     getdoctorinformation();
     function getdoctorinformation() {
@@ -17,15 +17,13 @@ $(document).ready(function () {
 
             success: function (response) {
                 if (response == null)
-                    alert("Data couldn't be loaded!");    
+                    alert("Data couldn't be loaded!");
 
                 else {
                     parsedoctorinformation(response);
                 }
             },
-            error: function (xhr, status, errorThrown) {
-                alert(status + errorThrown);
-            }
+
         });
     }
     function parsedoctorinformation(response) {
@@ -40,26 +38,26 @@ $(document).ready(function () {
 
         var experience = response[0].experience;
         var doctor_age = response[0].doctor_age;
-        var doctor_gender = response[0].education;
+        var doctor_gender = response[0].doctor_gender;
 
         var guild_number = response[0].guild_number;
         var dr_type = response[0].dr_type;
         var profile_image = response[0].doctor_image;
 
         $("#name").text(fullname);
-        $("#doctor_type").text("Doctor Type: "+dr_type);
-        $("#guild_number").text("Guild Number: "+guild_number);
-        $("#phone_number").text("Phone Number: "+phone);
-        $("#email").text("Email Address: "+email);
+        $("#doctor_type").text("Doctor Type: " + dr_type);
+        $("#guild_number").text("Guild Number: " + guild_number);
+        $("#phone_number").text("Phone Number: " + phone);
+        $("#email").text("Email Address: " + email);
         $("#job_title").text(job_title);
         $("#education").text(education);
         $("#gender").text(doctor_gender);
         $("#age").text(doctor_age);
         $("#professional_statments").text(professional_statement);
-        $("#About_yourself").text(about_yourself); 
+        $("#About_yourself").text(about_yourself);
         $("#experience").text(experience);
 
-        document.getElementById("profile_img").src = "../images/"+profile_image+"";
+        document.getElementById("profile_img").src = "../images/" + profile_image + "";
 
 
     }
@@ -73,8 +71,8 @@ $(document).ready(function () {
             data: { op: op, doctor_id: doctor_id },
 
             success: function (response) {
-                    parsedoctorspecialities(response);
-                
+                parsedoctorspecialities(response);
+
             },
             error: function (xhr, status, errorThrown) {
                 alert(status + errorThrown);
@@ -101,8 +99,8 @@ $(document).ready(function () {
         //    var print = $("#specialities").text(specialities);
         //    print = print + ", "+ $("#specialities").text(specialities);
         //}
-        
-        
+
+
     }
     $(document).on('click', '#logout', function () {
 

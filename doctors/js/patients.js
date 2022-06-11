@@ -54,7 +54,7 @@ $(document).ready(function () {
         var description = response[0].description;
         var age = response[0].p_age;
         var gender = response[0].p_gender;
-        patientimg.src="../../../test_senior_project/images/" + response[0].patient_image;
+        patientimg.src="../images/" + response[0].patient_image;
         var stu = response[0].student_or_not;
         var history = response[0].history;
         var city = response[0].city;

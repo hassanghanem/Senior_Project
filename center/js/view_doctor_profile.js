@@ -40,7 +40,7 @@ $(document).ready(function () {
 
         var experience = response[0].experience;
         var doctor_age = response[0].doctor_age;
-        var doctor_gender = response[0].education;
+        var doctor_gender = response[0].doctor_gender;
 
         var guild_number = response[0].guild_number;
         var dr_type = response[0].dr_type;

@@ -6,6 +6,9 @@ if(isset($_SESSION["id_patient"]))
     $id=$_SESSION["id_patient"];
  
 }
+else{
+    header("location:../login_register/login.php");
+}
 ?>
 <!DOCTYPE html>
 
