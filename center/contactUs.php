@@ -172,7 +172,7 @@ if(isset($_SESSION["id_patient"]))
                 <br>
                 <h2 style="font-size:22px margin-left:0px;">Call-in Reception Hours:</h2>
                 <div class="row">
-                    <div style="padding-top:10px;" ><label>Monday - Friday 8:30am to 5:00pm</label></div>
+                    <div style="padding-top:10px;" ><label>Monday - Friday 8:00am to 3:30pm</label></div>
                 </div>
                 
             </div>
@@ -189,8 +189,8 @@ if(isset($_SESSION["id_patient"]))
     Clinic <br>
     K.K District<br>
     Phone:+961 79 989 989<br>
-    Email: clinic@clinic.in<br>
-    Website: www.clinic.com<br>
+    Email: Free2Be@gmail.com<br>
+    Website: www.Free2Be.com<br>
 
  
        

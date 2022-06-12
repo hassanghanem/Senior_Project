@@ -259,7 +259,7 @@ $(document).ready(function () {
             }, 1000);
         }
         else {
-            alert("noooo");
+            alert("wrong old password");
         }
     }
 
